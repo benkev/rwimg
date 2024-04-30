@@ -1,0 +1,31 @@
+//
+// raytrace.h
+//    Definitions for beam_path(), beam_intensity(), and write_rwimage
+//
+
+#define min(a, b) ((a) < (b) ? (a) : (b))
+#define max(a, b) ((a) > (b) ? (a) : (b))
+
+double inline dot_product(double a[3], double b[3]);
+void inline cross_product(double a[3], double b[3],double c[3]);
+double sum(double a[], int n);
+double sum_squares(double vec[], int n);
+void print1d(int n, double a[n]);
+void print2d(int m, int n, double a[m][n]);
+double minval(double a[], int n);
+double maxval(double a[], int n);
+
+void beam_path(void (* Get_Plasma_Density)(), int nRay, short ExcludeRay_I[nRay], double Position_DI[3][nRay],
+	       double Slope_DI[3][nRay], double DeltaS_I[nRay], double ToleranceInit, double DensityCr, 
+	       double Intensity_I[nRay], short RayFlag_I[nRay], short *NewEntry);
+
+void plasma_density(int nRay, double Position_DI[3][nRay], double Density_I[nRay], double GradDensity_DI[3][nRay],
+		    double DeltaS_I[nRay], short RayFlag_I[nRay]);
+
+void beam_intensity(double XyzEarth_D[3], double RadioFrequency, double ImageRange_I[4], double rIntegration, 
+		    int nXPixel, int nYPixel, double Intensity_II[nYPixel][nXPixel]);
+
+void beam_intens_traj(double XyzEarth_D[3], double RadioFrequency, double ImageRange_I[4], 
+		      double rIntegration, int nXPixel, int nYPixel, double Intensity_II[nYPixel][nXPixel], 
+		      int const nTrajMax, int const lenTrajMax, int nTraj, int SelTraj_II[2][nTrajMax], 
+		      int LenTraj_I[nTrajMax], double Traj_DII[3][nTrajMax][lenTrajMax]);

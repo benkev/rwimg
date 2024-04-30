@@ -1,0 +1,6 @@
+nvcc -Xcompiler -fPIC -arch=sm_20 -Xcompiler -fno-exceptions -Xcompiler \
+-fno-rtti -c plasma_parameters.cu -o plasma_parameters.o
+
+
+gcc -shared -Wl,-soname,plasma_parameters.so \
+    -o plasma_parameters.so plasma_parameters.o -lc

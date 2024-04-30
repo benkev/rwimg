@@ -1,0 +1,9 @@
+#!/bin/bash -x
+nvcc -g -Xcompiler -fPIC -arch=sm_30  -Xcompiler -fno-exceptions -Xcompiler -fno-rtti -c plasma_parameters.cu
+gcc -g -shared -Wl,-soname,plasma_parameters.so \
+    -o plasma_parameters.so plasma_parameters.o -lc -lm -L/usr/local/cuda/lib64/ -lcudart -lcuda
+cp plasma_parameters.so test/
+
+
+
+

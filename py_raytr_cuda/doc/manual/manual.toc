@@ -1,0 +1,22 @@
+\contentsline {section}{\numberline {1}Introduction}{3}{section.1}
+\contentsline {section}{\numberline {2}The Algorithm}{3}{section.2}
+\contentsline {section}{\numberline {3}Using ipython}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}The First Simulation}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Adjusting the Raytracing Parameters}{4}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Performing a Customized Simulation}{5}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Using all of ipython's tools}{5}{subsection.3.4}
+\contentsline {subsection}{\numberline {3.5}Plasma Profile}{7}{subsection.3.5}
+\contentsline {subsection}{\numberline {3.6}Streamers}{7}{subsection.3.6}
+\contentsline {subsection}{\numberline {3.7}Advanced Features}{9}{subsection.3.7}
+\contentsline {section}{\numberline {4}Using the GUI}{9}{section.4}
+\contentsline {subsection}{\numberline {4.1}First Trace}{9}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Trajectories of Rays}{9}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Adding Streamers}{9}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Step Mode}{10}{subsection.4.4}
+\contentsline {section}{\numberline {5}Making a FITS File}{10}{section.5}
+\contentsline {section}{\numberline {6}Advanced Features}{11}{section.6}
+\contentsline {subsection}{\numberline {6.1}Trajectories}{11}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}The Value in Trace}{12}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Running the GUI Through Ipython}{12}{subsection.6.3}
+\contentsline {section}{\numberline {7}Speed Improvements}{12}{section.7}
+\contentsline {section}{\numberline {8}Plasma Parameters}{12}{section.8}
